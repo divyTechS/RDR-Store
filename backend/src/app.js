@@ -13,6 +13,7 @@ const app = express();
 // Global middleware
 app.use(cors({
   origin: 'http://localhost:5173',
+  "https://rdr-store-44e9.vercel.app"
   credentials: true
 }));
 app.use(express.json());
