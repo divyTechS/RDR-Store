@@ -1,3 +1,6 @@
+Here’s your README.md content properly formatted and cleaned up, ready to upload to GitHub:
+
+````markdown
 # RDR Store
 
 RDR Store is a full-stack e-commerce web application built with **React**, **React-Bootstrap**, **Node.js**, **Express**, and **MongoDB Atlas**. It allows users to browse products, add them to a cart, and checkout. Users can also create, edit, and delete their own products. This project was developed as part of an internship selection process assignment.
@@ -12,13 +15,13 @@ RDR Store is a full-stack e-commerce web application built with **React**, **Rea
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
+
 - [License](#license)
 
 ---
 
 ## Demo
-> Add your deployed app link here or screenshots below.
+> Add your deployed app link here or include screenshots below.
 
 ---
 
@@ -65,88 +68,89 @@ RDR Store is a full-stack e-commerce web application built with **React**, **Rea
 
 ## Installation
 
-Step 1: Clone the repository
+### Step 1: Clone the repository
+```bash
+git clone git@github.com:divyTechS/RDR-Store.git
+cd RDR-Store
+````
 
-git clone <your-repo-url>
-cd rdr-store
+### Step 2: Backend Setup
 
-
-Step 2: Backend Setup
-
-Navigate to the backend folder:
-
+```bash
 cd backend
-
-
-Install dependencies:
-
 npm install
+```
 
+Create a `.env` file in the backend folder with the following content:
 
-Create a .env file in the backend folder and add:
-
+```
 PORT=5000
 MONGO_URI=<Your MongoDB Atlas Connection String>
 JWT_SECRET=<Your JWT Secret>
-
+```
 
 Start the backend server:
 
+```bash
 npm run dev
+```
 
+### Step 3: Frontend Setup
 
-Step 3: Frontend Setup
-
-Navigate to the frontend folder:
-
+```bash
 cd frontend
-
-
-Install dependencies:
-
 npm install
-
-
-Start the frontend server:
-
 npm run dev
+```
 
+### Step 4: Access the Application
 
-Step 4: Access the Application
-
-Open your browser and go to: http://localhost:5173
-
+Open your browser and go to: `http://localhost:5173`
 Signup or login to start using the app.
-Usage
 
-Signup or login to access protected pages.
+---
 
-Browse products on the home page.
+## Usage
 
-Add products to your cart.
+* Signup or login to access protected pages.
+* Browse products on the home page.
+* Add products to your cart.
+* Checkout to simulate payment.
+* Create, edit, or delete products if you are the creator.
 
-Checkout to simulate payment.
+---
 
-Create, edit, or delete products if you are the creator.
+## Folder Structure
 
-Usage
+```
+RDR-Store/
+├─ backend/
+│  ├─ controllers/
+│  ├─ middleware/
+│  ├─ models/
+│  ├─ routes/
+│  ├─ config/
+│  └─ server.js
+├─ frontend/
+│  ├─ src/
+│  ├─ public/
+│  └─ package.json
+├─ .env
+└─ README.md
+```
 
-Signup or login to access protected pages.
+---
 
-Browse products on the home page.
+## Technologies Used
 
-Add products to your cart.
+* **Frontend:** React, React-Bootstrap, React-Router, Framer Motion, React Hot Toast
+* **Backend:** Node.js, Express, MongoDB, Mongoose
+* **Authentication:** JWT
+* **Others:** Axios, dotenv, cors, cookie-parser
 
-Checkout to simulate payment.
 
-Create, edit, or delete products if you are the creator.
 
-Technologies Used
+## License
 
-Frontend: React, React-Bootstrap, React-Router, Framer Motion, React Hot Toast
+This project is for educational purposes and internship assignment only.
 
-Backend: Node.js, Express, MongoDB, Mongoose
-
-Authentication: JWT
-
-Others: Axios, dotenv, cors, cookie-parser
